@@ -1,7 +1,6 @@
 # HulerTodo
 
 ## **Process**
-```
 
 Hello!
 I've approached this task in the same way I would approach writing production code. 
@@ -13,7 +12,6 @@ Faced with such a problem in a real work scenario I would confirm with the desig
 These problems or possibilities of further improvements weren't ignored, I've left ToDos in places where I was unsure about problems like this one. They mark spots where the current implementation is lacking (e.g you can add a list without a title) but also where making an assumption might result in an error.
 
 ## **Structure and how to run**
-```
 
 This project has been created by using Vue setup tools. 
 I chose to import Vue.Draggable as a tool for managing drag and drop sorting and behaviour.
