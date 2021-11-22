@@ -1,0 +1,41 @@
+/* Colors: */
+/* TODO: confirm colour naming scheme with the designer */
+$color-text: #FFFFFF;
+$color-primary: #FB6664;
+$color-grey2: #292931;
+$color-grey1: #1C1C21;
+$color-borders: #747474;
+
+$box-border-radius: 1rem;
+
+/* Checkbox mixin to avoid CSS repetition - controls both colors and icons */
+@mixin checkbox-behaviour {
+    border-radius: 50%;
+    background-color: $color-grey1;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+
+    &:checked {
+        background-color: $color-grey2;
+        background-image: url('~@/assets/images/checkmark.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        background-image: url('~@/assets/images/checkmark.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
+/* Media query max-width values */
+$mobile: 575.98px;
+$mobile_landscape: 767.98px;
+$tablet: 991.98px;
+$desktop: 1199.98px;
